@@ -59,6 +59,9 @@ class Character implements Fighter {
     };
   }
 
+  /** Ref: https://github.com/tryber/sd-014-b-project-trybers-and-dragons/pull/22/commits/02d42bba8a013555bcf52e2ca58bff75414ed34a
+   * ajuda do repo Elithon sobre o método receiveDamage.
+   */
   receiveDamage(attackPoints: number) {
     const damage = attackPoints - this._defense;
     if (damage > 0) this._lifePoints -= damage;
